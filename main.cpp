@@ -2,7 +2,7 @@
 #include <QWidget>
 
 
-//TEST OB QT FUNKTIONIERT CODE LÖSCHEN
+//TEST OB QT FUNKTIONIERT - CODE LÖSCHEN
 int main(int argc, char *argv[]){
     QApplication app(argc, argv);
 
