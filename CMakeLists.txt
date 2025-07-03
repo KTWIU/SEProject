@@ -13,3 +13,7 @@ add_executable(AufgabenTracker main.cpp)
 target_link_libraries(AufgabenTracker Qt6::Widgets)
 
 
+
+add_subdirectory(googletest)
+add_executable(simple_test test_simple.cpp)
+target_link_libraries(simple_test Qt6::Core gtest gtest_main)
