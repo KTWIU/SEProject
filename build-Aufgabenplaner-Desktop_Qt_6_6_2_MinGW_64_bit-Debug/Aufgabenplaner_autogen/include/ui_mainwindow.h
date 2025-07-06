@@ -13,11 +13,11 @@
 #include <QtGui/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCalendarWidget>
-#include <QtWidgets/QListView>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -27,38 +27,87 @@ class Ui_MainWindow
 public:
     QAction *action;
     QWidget *centralwidget;
-    QListView *listView;
+    QHBoxLayout *horizontalLayout;
+    QVBoxLayout *verticalLayout;
+    QPushButton *pBAufgabeHinzufuegen;
+    QPushButton *pBAufgabeErledigt;
+    QPushButton *pBAufgabeEntfernen;
+    QPushButton *pBAufgabenliste;
+    QPushButton *pBUeberfaelligeA;
+    QPushButton *pBErledigteA;
     QCalendarWidget *calendarWidget;
-    QPushButton *pushButton;
-    QMenuBar *menubar;
-    QStatusBar *statusbar;
+    QListWidget *listWidget;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(1029, 633);
+        MainWindow->resize(763, 660);
         action = new QAction(MainWindow);
         action->setObjectName("action");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        listView = new QListView(centralwidget);
-        listView->setObjectName("listView");
-        listView->setGeometry(QRect(330, 10, 461, 541));
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(centralwidget->sizePolicy().hasHeightForWidth());
+        centralwidget->setSizePolicy(sizePolicy);
+        horizontalLayout = new QHBoxLayout(centralwidget);
+        horizontalLayout->setSpacing(9);
+        horizontalLayout->setObjectName("horizontalLayout");
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName("verticalLayout");
+        pBAufgabeHinzufuegen = new QPushButton(centralwidget);
+        pBAufgabeHinzufuegen->setObjectName("pBAufgabeHinzufuegen");
+
+        verticalLayout->addWidget(pBAufgabeHinzufuegen);
+
+        pBAufgabeErledigt = new QPushButton(centralwidget);
+        pBAufgabeErledigt->setObjectName("pBAufgabeErledigt");
+
+        verticalLayout->addWidget(pBAufgabeErledigt);
+
+        pBAufgabeEntfernen = new QPushButton(centralwidget);
+        pBAufgabeEntfernen->setObjectName("pBAufgabeEntfernen");
+
+        verticalLayout->addWidget(pBAufgabeEntfernen);
+
+        pBAufgabenliste = new QPushButton(centralwidget);
+        pBAufgabenliste->setObjectName("pBAufgabenliste");
+
+        verticalLayout->addWidget(pBAufgabenliste);
+
+        pBUeberfaelligeA = new QPushButton(centralwidget);
+        pBUeberfaelligeA->setObjectName("pBUeberfaelligeA");
+
+        verticalLayout->addWidget(pBUeberfaelligeA);
+
+        pBErledigteA = new QPushButton(centralwidget);
+        pBErledigteA->setObjectName("pBErledigteA");
+
+        verticalLayout->addWidget(pBErledigteA);
+
         calendarWidget = new QCalendarWidget(centralwidget);
         calendarWidget->setObjectName("calendarWidget");
-        calendarWidget->setGeometry(QRect(10, 360, 224, 163));
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(980, 0, 20, 20));
+
+        verticalLayout->addWidget(calendarWidget);
+
+
+        horizontalLayout->addLayout(verticalLayout);
+
+        listWidget = new QListWidget(centralwidget);
+        listWidget->setObjectName("listWidget");
+        QSizePolicy sizePolicy1(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Expanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(listWidget->sizePolicy().hasHeightForWidth());
+        listWidget->setSizePolicy(sizePolicy1);
+
+        horizontalLayout->addWidget(listWidget);
+
+        horizontalLayout->setStretch(0, 1);
+        horizontalLayout->setStretch(1, 3);
         MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 1029, 21));
-        MainWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName("statusbar");
-        MainWindow->setStatusBar(statusbar);
 
         retranslateUi(MainWindow);
 
@@ -69,7 +118,12 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         action->setText(QCoreApplication::translate("MainWindow", "smpl task planner", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "X", nullptr));
+        pBAufgabeHinzufuegen->setText(QCoreApplication::translate("MainWindow", "Aufgabe hinzuf\303\274gen", nullptr));
+        pBAufgabeErledigt->setText(QCoreApplication::translate("MainWindow", "Aufgabe erledigt", nullptr));
+        pBAufgabeEntfernen->setText(QCoreApplication::translate("MainWindow", "Aufgabe entfernen", nullptr));
+        pBAufgabenliste->setText(QCoreApplication::translate("MainWindow", "Aufgabenliste", nullptr));
+        pBUeberfaelligeA->setText(QCoreApplication::translate("MainWindow", "\303\234berf\303\244llige Aufgaben", nullptr));
+        pBErledigteA->setText(QCoreApplication::translate("MainWindow", "Erledigte Aufgaben", nullptr));
     } // retranslateUi
 
 };
