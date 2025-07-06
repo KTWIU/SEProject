@@ -14,7 +14,7 @@ public:
     void addAufgabe(const Task&);  //Hinzufügen einer Aufgabe(button UI später)
     void delAufgabe(const int index);  //Löschen einer Aufgabe (button UI später)
     Task* findAufgabe(const int index); //findet über Index die Aufgabe und gibt Pointer auf entsprechende Aufgabe zurück
-    void listAufgaben();//Listet die Aufgaben auf
+    const vector<Task>& getTasks() const; //Referenz auf alle Aufgaben für die Anzeige in der GUI (const, da nur Anzeige)
     void saveAufgaben(); //Speichern
     void loadAufgaben(); //Laden
 

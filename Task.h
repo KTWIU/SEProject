@@ -5,11 +5,11 @@ using namespace std;
 class Task
 {
 public:
-    Task(const int index, const string& titel, const string& beschreibung, const string& faelligkeitsdatum);    //Standard Konstruktor
+    Task(int index, const string& titel, const string& beschreibung, const string& faelligkeitsdatum, bool isterledigt);    //Standard Konstruktor
     ~Task();                                                                                                    //Destruktor
 
     //getter Methoden
-    int getIndex() const;
+    int getIndex() const; 
     string getTitel() const;
     string getBeschreibung() const;
     string getFaelligkeitsdatum() const;

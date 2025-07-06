@@ -1,15 +1,15 @@
 #include "Task.h"
 
 //Konstruktor
-Task::Task(const int i, const string& t, const string& b, const string& f)
-: index(i), titel(t), beschreibung(b), faelligkeitsdatum(f), istErledigt(false)
+Task::Task(int i, const string& t, const string& b, const string& f, bool e)
+: index(i), titel(t), beschreibung(b), faelligkeitsdatum(f), istErledigt(e)
 {
     //Attribute bereits in Intialisierungsliste gesetzt
 }
 
-int Task::getIndex() const
+int Task::getIndex() const 
 {
-    return index;
+    return index; 
 };
 
 string Task::getTitel() const
