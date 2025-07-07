@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCalendarWidget>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
@@ -32,7 +33,7 @@ public:
     QPushButton *pBAufgabeHinzufuegen;
     QPushButton *pBAufgabeErledigt;
     QPushButton *pBAufgabeEntfernen;
-    QPushButton *pBAufgabenliste;
+    QLabel *label;
     QPushButton *pBUeberfaelligeA;
     QPushButton *pBErledigteA;
     QCalendarWidget *calendarWidget;
@@ -72,10 +73,10 @@ public:
 
         verticalLayout->addWidget(pBAufgabeEntfernen);
 
-        pBAufgabenliste = new QPushButton(centralwidget);
-        pBAufgabenliste->setObjectName("pBAufgabenliste");
+        label = new QLabel(centralwidget);
+        label->setObjectName("label");
 
-        verticalLayout->addWidget(pBAufgabenliste);
+        verticalLayout->addWidget(label);
 
         pBUeberfaelligeA = new QPushButton(centralwidget);
         pBUeberfaelligeA->setObjectName("pBUeberfaelligeA");
@@ -116,12 +117,12 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Aufgabenplaner", nullptr));
         action->setText(QCoreApplication::translate("MainWindow", "smpl task planner", nullptr));
         pBAufgabeHinzufuegen->setText(QCoreApplication::translate("MainWindow", "Aufgabe hinzuf\303\274gen", nullptr));
         pBAufgabeErledigt->setText(QCoreApplication::translate("MainWindow", "Aufgabe erledigt", nullptr));
         pBAufgabeEntfernen->setText(QCoreApplication::translate("MainWindow", "Aufgabe entfernen", nullptr));
-        pBAufgabenliste->setText(QCoreApplication::translate("MainWindow", "Aufgabenliste", nullptr));
+        label->setText(QString());
         pBUeberfaelligeA->setText(QCoreApplication::translate("MainWindow", "\303\234berf\303\244llige Aufgaben", nullptr));
         pBErledigteA->setText(QCoreApplication::translate("MainWindow", "Erledigte Aufgaben", nullptr));
     } // retranslateUi

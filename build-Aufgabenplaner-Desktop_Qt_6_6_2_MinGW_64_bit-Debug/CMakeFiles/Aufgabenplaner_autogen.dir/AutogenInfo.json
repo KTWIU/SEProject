@@ -263,9 +263,33 @@
 			null
 		],
 		[
+			"C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Aufgabenplaner/erledigteaufgabenliste.h",
+			"MU",
+			"EWIEGA46WW/moc_erledigteaufgabenliste.cpp",
+			null
+		],
+		[
 			"C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Aufgabenplaner/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Aufgabenplaner/ueberfaelligeaufgaben.h",
+			"MU",
+			"EWIEGA46WW/moc_ueberfaelligeaufgaben.cpp",
+			null
+		],
+		[
+			"C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Task.h",
+			"MU",
+			"L2PKDFUEU4/moc_Task.cpp",
+			null
+		],
+		[
+			"C:/Users/kevin/OneDrive/Desktop/Projekt/repo/TaskManager.h",
+			"MU",
+			"L2PKDFUEU4/moc_TaskManager.cpp",
 			null
 		]
 	],
@@ -345,12 +369,28 @@
 			null
 		],
 		[
+			"C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Aufgabenplaner/erledigteaufgabenliste.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Aufgabenplaner/main.cpp",
 			"MU",
 			null
 		],
 		[
 			"C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Aufgabenplaner/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Aufgabenplaner/ueberfaelligeaufgaben.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Task.cpp", "MU", null ],
+		[
+			"C:/Users/kevin/OneDrive/Desktop/Projekt/repo/TaskManager.cpp",
 			"MU",
 			null
 		]

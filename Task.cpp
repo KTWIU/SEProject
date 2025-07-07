@@ -56,3 +56,5 @@ void Task::setIstErledigt(const bool neuesIstErledigt)
 {
     istErledigt = neuesIstErledigt;
 };
+
+Task::~Task() {}

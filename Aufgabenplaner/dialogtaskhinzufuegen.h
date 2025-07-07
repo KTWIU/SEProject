@@ -15,6 +15,8 @@ public:
     explicit DialogTaskHinzufuegen(QWidget *parent = nullptr);
     ~DialogTaskHinzufuegen();
 
+private slots:
+
 private:
     Ui::DialogTaskHinzufuegen *ui;
 };

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Aufgabenplaner</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="sizePolicy">
@@ -48,9 +48,9 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pBAufgabenliste">
+       <widget class="QLabel" name="label">
         <property name="text">
-         <string>Aufgabenliste</string>
+         <string/>
         </property>
        </widget>
       </item>

@@ -6,6 +6,9 @@ DialogTaskHinzufuegen::DialogTaskHinzufuegen(QWidget *parent)
     , ui(new Ui::DialogTaskHinzufuegen)
 {
     ui->setupUi(this);
+
+    connect(ui->AufgabeSpeichernDialog, &QPushButton::clicked, this, &QDialog::accept); //
+    connect(ui->AbbrechenDialog, &QPushButton::clicked, this, &QDialog::reject);
 }
 
 DialogTaskHinzufuegen::~DialogTaskHinzufuegen()

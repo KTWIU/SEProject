@@ -24,6 +24,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         dialogtaskhinzufuegen.h dialogtaskhinzufuegen.cpp dialogtaskhinzufuegen.ui
+        erledigteaufgabenliste.h erledigteaufgabenliste.cpp erledigteaufgabenliste.ui
+        ../Task.cpp ../TaskManager.cpp
+        ueberfaelligeaufgaben.h ueberfaelligeaufgaben.cpp ueberfaelligeaufgaben.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Aufgabenplaner APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

@@ -81,6 +81,38 @@ build CMakeFiles/Aufgabenplaner.dir/dialogtaskhinzufuegen.cpp.obj: CXX_COMPILER_
   OBJECT_DIR = CMakeFiles\Aufgabenplaner.dir
   OBJECT_FILE_DIR = CMakeFiles\Aufgabenplaner.dir
 
+build CMakeFiles/Aufgabenplaner.dir/erledigteaufgabenliste.cpp.obj: CXX_COMPILER__Aufgabenplaner_unscanned_Debug C$:/Users/kevin/OneDrive/Desktop/Projekt/repo/Aufgabenplaner/erledigteaufgabenliste.cpp || cmake_object_order_depends_target_Aufgabenplaner
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Aufgabenplaner.dir\erledigteaufgabenliste.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/kevin/OneDrive/Desktop/Projekt/repo/build-Aufgabenplaner-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Aufgabenplaner_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\Aufgabenplaner.dir
+  OBJECT_FILE_DIR = CMakeFiles\Aufgabenplaner.dir
+
+build CMakeFiles/Aufgabenplaner.dir/C_/Users/kevin/OneDrive/Desktop/Projekt/repo/Task.cpp.obj: CXX_COMPILER__Aufgabenplaner_unscanned_Debug C$:/Users/kevin/OneDrive/Desktop/Projekt/repo/Task.cpp || cmake_object_order_depends_target_Aufgabenplaner
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Aufgabenplaner.dir\C_\Users\kevin\OneDrive\Desktop\Projekt\repo\Task.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/kevin/OneDrive/Desktop/Projekt/repo/build-Aufgabenplaner-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Aufgabenplaner_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\Aufgabenplaner.dir
+  OBJECT_FILE_DIR = CMakeFiles\Aufgabenplaner.dir\C_\Users\kevin\OneDrive\Desktop\Projekt\repo
+
+build CMakeFiles/Aufgabenplaner.dir/C_/Users/kevin/OneDrive/Desktop/Projekt/repo/TaskManager.cpp.obj: CXX_COMPILER__Aufgabenplaner_unscanned_Debug C$:/Users/kevin/OneDrive/Desktop/Projekt/repo/TaskManager.cpp || cmake_object_order_depends_target_Aufgabenplaner
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Aufgabenplaner.dir\C_\Users\kevin\OneDrive\Desktop\Projekt\repo\TaskManager.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/kevin/OneDrive/Desktop/Projekt/repo/build-Aufgabenplaner-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Aufgabenplaner_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\Aufgabenplaner.dir
+  OBJECT_FILE_DIR = CMakeFiles\Aufgabenplaner.dir\C_\Users\kevin\OneDrive\Desktop\Projekt\repo
+
+build CMakeFiles/Aufgabenplaner.dir/ueberfaelligeaufgaben.cpp.obj: CXX_COMPILER__Aufgabenplaner_unscanned_Debug C$:/Users/kevin/OneDrive/Desktop/Projekt/repo/Aufgabenplaner/ueberfaelligeaufgaben.cpp || cmake_object_order_depends_target_Aufgabenplaner
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Aufgabenplaner.dir\ueberfaelligeaufgaben.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/kevin/OneDrive/Desktop/Projekt/repo/build-Aufgabenplaner-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/Aufgabenplaner_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\Aufgabenplaner.dir
+  OBJECT_FILE_DIR = CMakeFiles\Aufgabenplaner.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Aufgabenplaner
@@ -89,7 +121,7 @@ build CMakeFiles/Aufgabenplaner.dir/dialogtaskhinzufuegen.cpp.obj: CXX_COMPILER_
 #############################################
 # Link the executable Aufgabenplaner.exe
 
-build Aufgabenplaner.exe: CXX_EXECUTABLE_LINKER__Aufgabenplaner_Debug CMakeFiles/Aufgabenplaner.dir/Aufgabenplaner_autogen/mocs_compilation.cpp.obj CMakeFiles/Aufgabenplaner.dir/main.cpp.obj CMakeFiles/Aufgabenplaner.dir/mainwindow.cpp.obj CMakeFiles/Aufgabenplaner.dir/dialogtaskhinzufuegen.cpp.obj | C$:/Qt/6.6.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.6.2/mingw_64/lib/libQt6EntryPoint.a || Aufgabenplaner_autogen Aufgabenplaner_autogen_timestamp_deps
+build Aufgabenplaner.exe: CXX_EXECUTABLE_LINKER__Aufgabenplaner_Debug CMakeFiles/Aufgabenplaner.dir/Aufgabenplaner_autogen/mocs_compilation.cpp.obj CMakeFiles/Aufgabenplaner.dir/main.cpp.obj CMakeFiles/Aufgabenplaner.dir/mainwindow.cpp.obj CMakeFiles/Aufgabenplaner.dir/dialogtaskhinzufuegen.cpp.obj CMakeFiles/Aufgabenplaner.dir/erledigteaufgabenliste.cpp.obj CMakeFiles/Aufgabenplaner.dir/C_/Users/kevin/OneDrive/Desktop/Projekt/repo/Task.cpp.obj CMakeFiles/Aufgabenplaner.dir/C_/Users/kevin/OneDrive/Desktop/Projekt/repo/TaskManager.cpp.obj CMakeFiles/Aufgabenplaner.dir/ueberfaelligeaufgaben.cpp.obj | C$:/Qt/6.6.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.6.2/mingw_64/lib/libQt6EntryPoint.a || Aufgabenplaner_autogen Aufgabenplaner_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.6.2/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.6.2/mingw_64/lib/libQt6Gui.a  C:/Qt/6.6.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.6.2/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -176,7 +208,7 @@ build Aufgabenplaner_autogen_timestamp_deps: phony
 #############################################
 # Utility command for Aufgabenplaner_autogen
 
-build Aufgabenplaner_autogen: phony CMakeFiles/Aufgabenplaner_autogen Aufgabenplaner_autogen/include/ui_mainwindow.h Aufgabenplaner_autogen/include/ui_dialogtaskhinzufuegen.h Aufgabenplaner_autogen/timestamp Aufgabenplaner_autogen/mocs_compilation.cpp Aufgabenplaner_autogen_timestamp_deps
+build Aufgabenplaner_autogen: phony CMakeFiles/Aufgabenplaner_autogen Aufgabenplaner_autogen/include/ui_mainwindow.h Aufgabenplaner_autogen/include/ui_dialogtaskhinzufuegen.h Aufgabenplaner_autogen/include/ui_erledigteaufgabenliste.h Aufgabenplaner_autogen/include/ui_ueberfaelligeaufgaben.h Aufgabenplaner_autogen/timestamp Aufgabenplaner_autogen/mocs_compilation.cpp Aufgabenplaner_autogen_timestamp_deps
 
 
 #############################################
@@ -193,7 +225,7 @@ build Aufgabenplaner_autogen/timestamp Aufgabenplaner_autogen/mocs_compilation.c
 #############################################
 # Phony custom command for CMakeFiles\Aufgabenplaner_autogen
 
-build CMakeFiles/Aufgabenplaner_autogen Aufgabenplaner_autogen/include/ui_mainwindow.h Aufgabenplaner_autogen/include/ui_dialogtaskhinzufuegen.h | ${cmake_ninja_workdir}CMakeFiles/Aufgabenplaner_autogen ${cmake_ninja_workdir}Aufgabenplaner_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}Aufgabenplaner_autogen/include/ui_dialogtaskhinzufuegen.h: phony Aufgabenplaner_autogen/timestamp || Aufgabenplaner_autogen_timestamp_deps
+build CMakeFiles/Aufgabenplaner_autogen Aufgabenplaner_autogen/include/ui_mainwindow.h Aufgabenplaner_autogen/include/ui_dialogtaskhinzufuegen.h Aufgabenplaner_autogen/include/ui_erledigteaufgabenliste.h Aufgabenplaner_autogen/include/ui_ueberfaelligeaufgaben.h | ${cmake_ninja_workdir}CMakeFiles/Aufgabenplaner_autogen ${cmake_ninja_workdir}Aufgabenplaner_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}Aufgabenplaner_autogen/include/ui_dialogtaskhinzufuegen.h ${cmake_ninja_workdir}Aufgabenplaner_autogen/include/ui_erledigteaufgabenliste.h ${cmake_ninja_workdir}Aufgabenplaner_autogen/include/ui_ueberfaelligeaufgaben.h: phony Aufgabenplaner_autogen/timestamp || Aufgabenplaner_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

@@ -102,3 +102,8 @@ void TaskManager::loadAufgaben()
     }
     TasksFile.close();
 };
+
+vector<Task>& TaskManager::getTasks()
+{
+    return v_tasks;
+}
