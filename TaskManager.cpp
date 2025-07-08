@@ -101,6 +101,20 @@ void TaskManager::loadAufgaben()
         cout << "Datei konnte beim laden nicht geöffnet werden!";
     }
     TasksFile.close();
+}
+
+void TaskManager::editAufgabe(const int index, string neuerTitel, string neueBeschreibung, string neuesFaelligkeitsdatum) 
+{
+    auto it = find_if(v_tasks.begin(), v_tasks.end(), [index](const Task& t){return t.getIndex()==index;});
+    if (it != v_tasks.end())
+    {
+        it->setTitel(neuerTitel);
+        it->setBeschreibung(neueBeschreibung);
+        it->setFaelligkeitsdatum(neuesFaelligkeitsdatum);
+    } else 
+    {
+        cout << "Index error beim Versuch, die Aufgabe zu bearbeiten!";
+    }
 };
 
 vector<Task>& TaskManager::getTasks()

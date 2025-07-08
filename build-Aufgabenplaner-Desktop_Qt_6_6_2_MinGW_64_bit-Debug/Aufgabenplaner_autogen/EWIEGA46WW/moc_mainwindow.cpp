@@ -39,47 +39,55 @@ namespace {
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::stringData(
     "MainWindow",
-    "on_pushButton_clicked",
-    "",
     "on_pBAufgabeHinzufuegen_clicked",
+    "",
     "on_pBAufgabeErledigt_clicked",
     "on_pBErledigteA_clicked",
     "on_pBUeberfaelligeA_clicked",
-    "on_pBAufgabeEntfernen_clicked"
+    "on_pBAufgabeEntfernen_clicked",
+    "on_listWidget_itemDoubleClicked",
+    "QListWidgetItem*",
+    "item"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[16];
+    uint offsetsAndSizes[20];
     char stringdata0[11];
-    char stringdata1[22];
+    char stringdata1[32];
     char stringdata2[1];
-    char stringdata3[32];
-    char stringdata4[29];
-    char stringdata5[24];
-    char stringdata6[28];
-    char stringdata7[30];
+    char stringdata3[29];
+    char stringdata4[24];
+    char stringdata5[28];
+    char stringdata6[30];
+    char stringdata7[32];
+    char stringdata8[17];
+    char stringdata9[5];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_stringdata_CLASSMainWindowENDCLASS = {
     {
         QT_MOC_LITERAL(0, 10),  // "MainWindow"
-        QT_MOC_LITERAL(11, 21),  // "on_pushButton_clicked"
-        QT_MOC_LITERAL(33, 0),  // ""
-        QT_MOC_LITERAL(34, 31),  // "on_pBAufgabeHinzufuegen_clicked"
-        QT_MOC_LITERAL(66, 28),  // "on_pBAufgabeErledigt_clicked"
-        QT_MOC_LITERAL(95, 23),  // "on_pBErledigteA_clicked"
-        QT_MOC_LITERAL(119, 27),  // "on_pBUeberfaelligeA_clicked"
-        QT_MOC_LITERAL(147, 29)   // "on_pBAufgabeEntfernen_clicked"
+        QT_MOC_LITERAL(11, 31),  // "on_pBAufgabeHinzufuegen_clicked"
+        QT_MOC_LITERAL(43, 0),  // ""
+        QT_MOC_LITERAL(44, 28),  // "on_pBAufgabeErledigt_clicked"
+        QT_MOC_LITERAL(73, 23),  // "on_pBErledigteA_clicked"
+        QT_MOC_LITERAL(97, 27),  // "on_pBUeberfaelligeA_clicked"
+        QT_MOC_LITERAL(125, 29),  // "on_pBAufgabeEntfernen_clicked"
+        QT_MOC_LITERAL(155, 31),  // "on_listWidget_itemDoubleClicked"
+        QT_MOC_LITERAL(187, 16),  // "QListWidgetItem*"
+        QT_MOC_LITERAL(204, 4)   // "item"
     },
     "MainWindow",
-    "on_pushButton_clicked",
-    "",
     "on_pBAufgabeHinzufuegen_clicked",
+    "",
     "on_pBAufgabeErledigt_clicked",
     "on_pBErledigteA_clicked",
     "on_pBUeberfaelligeA_clicked",
-    "on_pBAufgabeEntfernen_clicked"
+    "on_pBAufgabeEntfernen_clicked",
+    "on_listWidget_itemDoubleClicked",
+    "QListWidgetItem*",
+    "item"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -104,7 +112,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        4,    0,   52,    2, 0x08,    3 /* Private */,
        5,    0,   53,    2, 0x08,    4 /* Private */,
        6,    0,   54,    2, 0x08,    5 /* Private */,
-       7,    0,   55,    2, 0x08,    6 /* Private */,
+       7,    1,   55,    2, 0x08,    6 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -112,7 +120,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 8,    9,
 
        0        // eod
 };
@@ -126,8 +134,6 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSMainWindowENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
-        // method 'on_pushButton_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pBAufgabeHinzufuegen_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pBAufgabeErledigt_clicked'
@@ -137,7 +143,10 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'on_pBUeberfaelligeA_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pBAufgabeEntfernen_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_listWidget_itemDoubleClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QListWidgetItem *, std::false_type>
     >,
     nullptr
 } };
@@ -148,16 +157,15 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_pushButton_clicked(); break;
-        case 1: _t->on_pBAufgabeHinzufuegen_clicked(); break;
-        case 2: _t->on_pBAufgabeErledigt_clicked(); break;
-        case 3: _t->on_pBErledigteA_clicked(); break;
-        case 4: _t->on_pBUeberfaelligeA_clicked(); break;
-        case 5: _t->on_pBAufgabeEntfernen_clicked(); break;
+        case 0: _t->on_pBAufgabeHinzufuegen_clicked(); break;
+        case 1: _t->on_pBAufgabeErledigt_clicked(); break;
+        case 2: _t->on_pBErledigteA_clicked(); break;
+        case 3: _t->on_pBUeberfaelligeA_clicked(); break;
+        case 4: _t->on_pBAufgabeEntfernen_clicked(); break;
+        case 5: _t->on_listWidget_itemDoubleClicked((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1]))); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *MainWindow::metaObject() const

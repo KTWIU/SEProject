@@ -257,6 +257,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Aufgabenplaner/dialogtaskbearbeiten.h",
+			"MU",
+			"EWIEGA46WW/moc_dialogtaskbearbeiten.cpp",
+			null
+		],
+		[
 			"C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Aufgabenplaner/dialogtaskhinzufuegen.h",
 			"MU",
 			"EWIEGA46WW/moc_dialogtaskhinzufuegen.cpp",
@@ -363,6 +369,11 @@
 	"SETTINGS_FILE" : "C:/Users/kevin/OneDrive/Desktop/Projekt/repo/build-Aufgabenplaner-Desktop_Qt_6_6_2_MinGW_64_bit-Debug/CMakeFiles/Aufgabenplaner_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Aufgabenplaner/dialogtaskbearbeiten.cpp",
+			"MU",
+			null
+		],
 		[
 			"C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Aufgabenplaner/dialogtaskhinzufuegen.cpp",
 			"MU",

@@ -77,7 +77,7 @@ public:
 
     void retranslateUi(QDialog *DialogTaskHinzufuegen)
     {
-        DialogTaskHinzufuegen->setWindowTitle(QCoreApplication::translate("DialogTaskHinzufuegen", "Dialog", nullptr));
+        DialogTaskHinzufuegen->setWindowTitle(QCoreApplication::translate("DialogTaskHinzufuegen", "Aufgabe hinzuf\303\274gen", nullptr));
         titel->setText(QString());
         AbbrechenDialog->setText(QCoreApplication::translate("DialogTaskHinzufuegen", "Abbrechen", nullptr));
         AufgabeSpeichernDialog->setText(QCoreApplication::translate("DialogTaskHinzufuegen", "Aufgabe speichern", nullptr));

@@ -8,12 +8,12 @@ ueberfaelligeAufgaben::ueberfaelligeAufgaben(QWidget *parent)
     ui->setupUi(this);
 }
 
-ueberfaelligeAufgaben::~ueberfaelligeAufgaben()
+ueberfaelligeAufgaben::~ueberfaelligeAufgaben()                         //Destruktor
 {
     delete ui;
 }
 
-void ueberfaelligeAufgaben::addTaskToList(const QString& text)
+void ueberfaelligeAufgaben::addTaskToList(const QString& text)          //Methode für hinzufügen in ueberfällige Liste
 {
-    ui->listWidgetUeberfaellige->addItem(text);
+    ui->listWidgetUeberfaellige->addItem(text);                         //text als neuer Eintrag in der Liste
 }

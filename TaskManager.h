@@ -17,6 +17,7 @@ public:
     const vector<Task>& getTasks() const; //Referenz auf alle Aufgaben für die Anzeige in der GUI 
     void saveAufgaben(); //Speichern
     void loadAufgaben(); //Laden
+    void editAufgabe(const int index, string neuerTitel, string neueBeschreibung, string neuesFaelligkeitsdatum); //Bearbeiten von Aufgaben über QListWidget mit Doppelklick
     vector<Task>& getTasks(); //nicht const getTasks Funktion
 
 private:
