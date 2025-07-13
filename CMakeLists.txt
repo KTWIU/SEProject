@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_PREFIX_PATH "C:/Qt/6.6.2/mingw_64/lib/cmake")
 
 
-find_package(Qt6 COMPONENTS Widgets REQUIRED)
+find_package(Qt6 COMPONENTS Widgets REQUIRED)                   #Qt Widgets finden
 
 add_executable(AufgabenTracker main.cpp)
 target_link_libraries(AufgabenTracker Qt6::Widgets)
@@ -16,4 +16,4 @@ target_link_libraries(AufgabenTracker Qt6::Widgets)
 
 add_subdirectory(googletest)
 add_executable(simple_test test_simple.cpp)
-target_link_libraries(simple_test Qt6::Core gtest gtest_main)
+target_link_libraries(simple_test Qt6::Core gtest gtest_main)   #Qt Widgets einbinden

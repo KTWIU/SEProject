@@ -4,10 +4,10 @@
 Task::Task(int i, const string& t, const string& b, const string& f, bool e)
 : index(i), titel(t), beschreibung(b), faelligkeitsdatum(f), istErledigt(e)
 {
-    //Attribute bereits in Intialisierungsliste gesetzt
+                                                                            //Attribute bereits in Intialisierungsliste gesetzt
 }
 
-int Task::getIndex() const 
+int Task::getIndex() const                                                  //Definieren der entsprechenden getter/setter Methoden
 {
     return index; 
 };
@@ -57,4 +57,4 @@ void Task::setIstErledigt(const bool neuesIstErledigt)
     istErledigt = neuesIstErledigt;
 };
 
-Task::~Task() {}
+Task::~Task() {}                                                               //Destruktor       

@@ -6,7 +6,7 @@ class Task
 {
 public:
     Task(int index, const string& titel, const string& beschreibung, const string& faelligkeitsdatum, bool isterledigt);    //Standard Konstruktor
-    ~Task();                                                                                                    //Destruktor
+    ~Task();                                                                                                                //Destruktor
 
     //getter Methoden
     int getIndex() const; 
