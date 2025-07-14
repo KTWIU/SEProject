@@ -27,10 +27,12 @@ MainWindow::MainWindow(QWidget *parent)                                         
         const Task& t = tasks[i];
         if(!t.getIstErledigt())                                                                 //nur die offenen Aufgaben im mainwindow zeigen
         {
+            QDate faellig = QDate::fromString(QString::fromStdString(t.getFaelligkeitsdatum()), "yyyy-MM-dd");
+            QString statusText = (faellig.isValid() && faellig < QDate::currentDate()) ? "Überfällig" : "Offen";
             QString itemText = QString::fromStdString(t.getTitel()) + " | "
-                             + QString::fromStdString(t.getBeschreibung()) + " | "
-                             + QString::fromStdString(t.getFaelligkeitsdatum()) + " | "
-                               + "Offen";
+                               + QString::fromStdString(t.getBeschreibung()) + " | "
+                               + QString::fromStdString(t.getFaelligkeitsdatum()) + " | "
+                               + statusText;
             ui->listWidget->addItem(itemText);                                                  //Attribute jedes Tasks schreiben
             guiToVectorIndex.append(i);                                                         //Mapping der noch nicht erledigten Aufgaben für List MainWindow (sonst würden auch erledigte
         }                                                                                           //Indizes angezeigt werden)
@@ -68,13 +70,16 @@ void MainWindow::on_pBAufgabeHinzufuegen_clicked()                              
 
         taskManager.saveAufgaben();                                                             //speichern, nachdem eine Aufgabe hinzugefügt wurde
 
-        const auto& tasks = taskManager.getTasks();                                             //Referenz auf vector mit den Tasks
-        const Task& t = tasks.back();                                                           //Referenz auf letzten Task im vector
+        const auto& tasks = taskManager.getTasks();
+        const Task& t = tasks.back();
+        QDate faellig = QDate::fromString(QString::fromStdString(t.getFaelligkeitsdatum()), "yyyy-MM-dd");
+        QString statusText = (faellig.isValid() && faellig < QDate::currentDate()) ? "Überfällig" : "Offen";
         QString itemText = QString::fromStdString(t.getTitel()) + " | "
                            + QString::fromStdString(t.getBeschreibung()) + " | "
                            + QString::fromStdString(t.getFaelligkeitsdatum()) + " | "
-                           + (t.getIstErledigt() ? "Erledigt" : "Offen");
-        ui->listWidget->addItem(itemText);                                                      //Attribute aus dem Vector zur Anzeige in der Liste
+                           + statusText;
+        ui->listWidget->addItem(itemText);
+                                                           //Attribute aus dem Vector zur Anzeige in der Liste
     }
 }
 

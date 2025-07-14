@@ -1,13 +1,15 @@
 # ninja log v6
-43	2268	7740930615551178	googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	b02f7d9aaf413c93
-29	2270	7740930615415986	googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	d174752d3122ceb8
-33	2297	7740930615451069	CMakeFiles/AufgabenTracker.dir/main.cpp.obj	3936ac69858db6e9
-22	8088	7740930615340692	googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	b2776cc7f86f5d1b
-37	2305	7740930615491184	CMakeFiles/simple_test.dir/test_simple.cpp.obj	314cb349fc633ad5
-2297	2701	7740930638086279	AufgabenTracker.exe	bb27a9e0eab51669
-25	2874	7740930615375829	googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	a4ed093bbdd45d7
-8090	11561	7740930696022670	lib/libgtest.a	22644e05dbe1c5bc
-11566	11628	7740930730780581	lib/libgtest_main.a	3f76ba102aa929ba
-11561	11973	7740930730726421	lib/libgmock.a	2f210e2b3974d283
-11973	12035	7740930734847061	lib/libgmock_main.a	1e2b25a6f1daebcd
-11628	15218	7740930731406563	simple_test.exe	402fa700a9fa49c2
+20	1300	7742067412161434	googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	d174752d3122ceb8
+32	1674	7742067412281688	googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	b02f7d9aaf413c93
+24	1939	7742067412201450	CMakeFiles/AufgabenTracker.dir/main.cpp.obj	3936ac69858db6e9
+9	6317	7742067412056145	googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	b2776cc7f86f5d1b
+1941	2098	7742067431369670	AufgabenTracker.exe	bb27a9e0eab51669
+40	1943	7742111452752265	CMakeFiles/simple_test.dir/test_simple.cpp.obj	314cb349fc633ad5
+15	2847	7742067412116313	googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	a4ed093bbdd45d7
+6319	9688	7742067475150934	lib/libgtest.a	22644e05dbe1c5bc
+9695	9760	7742067508904655	lib/libgtest_main.a	3f76ba102aa929ba
+9688	10093	7742067508854505	lib/libgmock.a	2f210e2b3974d283
+10093	10158	7742067512891032	lib/libgmock_main.a	1e2b25a6f1daebcd
+1944	5889	7742111471790292	simple_test.exe	402fa700a9fa49c2
+34	1762	7742115528442853	CMakeFiles/simple_test.dir/test_simple.cpp.obj	314cb349fc633ad5
+1762	5367	7742115545723772	simple_test.exe	402fa700a9fa49c2
