@@ -37,6 +37,7 @@ private:
     Ui::MainWindow *ui;
     TaskManager taskManager;                                                    //Objekt zum verwalten der Aufgaben (Backend)
     QVector<int> guiToVectorIndex;                                              //Zuordnungsliste zwischen den QListWidget einträgen und tatsächlichen Aufgaben Indizes
+    void refreshListWidget();                                                   //Funktion, die ListWidget und Mapping nach Aktion (z.B. bearbeiten...) aktualisiert/neu aufbaut
 };
 
 #endif // MAINWINDOW_H
