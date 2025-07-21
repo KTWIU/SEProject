@@ -81,7 +81,8 @@
         "thread": "cpp",
         "variant": "cpp",
         "fstream": "cpp",
-        "qstring": "cpp"
+        "qstring": "cpp",
+        "qapplication": "cpp"
     },
     "editor.tokenColorCustomizations": {
         "textMateRules": [

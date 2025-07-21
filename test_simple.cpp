@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
-#include "C:/Users/kevin/OneDrive/Desktop/Projekt/repo/TaskManager.h" 
-#include "C:/Users/kevin/OneDrive/Desktop/Projekt/repo/TaskManager.cpp" 
-#include "C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Task.h" 
-#include "C:/Users/kevin/OneDrive/Desktop/Projekt/repo/Task.cpp" 
+#include "TaskManager.h" 
+#include "TaskManager.cpp" 
+#include "Task.h" 
+#include "Task.cpp"
 #include <QString>
 #include <QDate>
 

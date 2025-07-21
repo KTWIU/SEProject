@@ -3,7 +3,7 @@
 #include <QListWidget>
 #include <QMainWindow>
 #include <QVector>
-#include "C:/Users/kevin/OneDrive/Desktop/Projekt/repo/TaskManager.h"           //Einbinden der eigenen Klasse zum verwalten der Aufgaben
+#include "../TaskManager.h"           //Einbinden der eigenen Klasse zum verwalten der Aufgaben
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

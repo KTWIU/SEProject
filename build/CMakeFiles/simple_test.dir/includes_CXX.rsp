@@ -1,0 +1,1 @@
+-IC:/Projekte/Projekt/repo/build/simple_test_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/include -isystem "C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++" -isystem C:/Projekte/Projekt/repo/googletest/googletest/include -isystem C:/Projekte/Projekt/repo/googletest/googletest
