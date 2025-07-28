@@ -1,0 +1,116 @@
+[
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Projekte/Projekt/repo/build/AufgabenTracker_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\AufgabenTracker.dir\\AufgabenTracker_autogen\\mocs_compilation.cpp.obj -c C:\\Projekte\\Projekt\\repo\\build\\AufgabenTracker_autogen\\mocs_compilation.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\build\\AufgabenTracker_autogen\\mocs_compilation.cpp",
+  "output": "CMakeFiles\\AufgabenTracker.dir\\AufgabenTracker_autogen\\mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Projekte/Projekt/repo/build/AufgabenTracker_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\AufgabenTracker.dir\\main.cpp.obj -c C:\\Projekte\\Projekt\\repo\\main.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\main.cpp",
+  "output": "CMakeFiles\\AufgabenTracker.dir\\main.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Projekte/Projekt/repo/build/AufgabenTracker_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\AufgabenTracker.dir\\Task.cpp.obj -c C:\\Projekte\\Projekt\\repo\\Task.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\Task.cpp",
+  "output": "CMakeFiles\\AufgabenTracker.dir\\Task.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Projekte/Projekt/repo/build/AufgabenTracker_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\AufgabenTracker.dir\\TaskManager.cpp.obj -c C:\\Projekte\\Projekt\\repo\\TaskManager.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\TaskManager.cpp",
+  "output": "CMakeFiles\\AufgabenTracker.dir\\TaskManager.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Projekte/Projekt/repo/build/AufgabenTracker_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\AufgabenTracker.dir\\Aufgabenplaner\\mainwindow.cpp.obj -c C:\\Projekte\\Projekt\\repo\\Aufgabenplaner\\mainwindow.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\Aufgabenplaner\\mainwindow.cpp",
+  "output": "CMakeFiles\\AufgabenTracker.dir\\Aufgabenplaner\\mainwindow.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Projekte/Projekt/repo/build/AufgabenTracker_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\AufgabenTracker.dir\\Aufgabenplaner\\dialogtaskbearbeiten.cpp.obj -c C:\\Projekte\\Projekt\\repo\\Aufgabenplaner\\dialogtaskbearbeiten.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\Aufgabenplaner\\dialogtaskbearbeiten.cpp",
+  "output": "CMakeFiles\\AufgabenTracker.dir\\Aufgabenplaner\\dialogtaskbearbeiten.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Projekte/Projekt/repo/build/AufgabenTracker_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\AufgabenTracker.dir\\Aufgabenplaner\\dialogtaskhinzufuegen.cpp.obj -c C:\\Projekte\\Projekt\\repo\\Aufgabenplaner\\dialogtaskhinzufuegen.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\Aufgabenplaner\\dialogtaskhinzufuegen.cpp",
+  "output": "CMakeFiles\\AufgabenTracker.dir\\Aufgabenplaner\\dialogtaskhinzufuegen.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Projekte/Projekt/repo/build/AufgabenTracker_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\AufgabenTracker.dir\\Aufgabenplaner\\erledigteaufgabenliste.cpp.obj -c C:\\Projekte\\Projekt\\repo\\Aufgabenplaner\\erledigteaufgabenliste.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\Aufgabenplaner\\erledigteaufgabenliste.cpp",
+  "output": "CMakeFiles\\AufgabenTracker.dir\\Aufgabenplaner\\erledigteaufgabenliste.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Projekte/Projekt/repo/build/AufgabenTracker_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\AufgabenTracker.dir\\Aufgabenplaner\\ueberfaelligeaufgaben.cpp.obj -c C:\\Projekte\\Projekt\\repo\\Aufgabenplaner\\ueberfaelligeaufgaben.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\Aufgabenplaner\\ueberfaelligeaufgaben.cpp",
+  "output": "CMakeFiles\\AufgabenTracker.dir\\Aufgabenplaner\\ueberfaelligeaufgaben.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Projekte/Projekt/repo/build/simple_test_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Projekte/Projekt/repo/googletest/googletest/include -isystem C:/Projekte/Projekt/repo/googletest/googletest -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\simple_test.dir\\simple_test_autogen\\mocs_compilation.cpp.obj -c C:\\Projekte\\Projekt\\repo\\build\\simple_test_autogen\\mocs_compilation.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\build\\simple_test_autogen\\mocs_compilation.cpp",
+  "output": "CMakeFiles\\simple_test.dir\\simple_test_autogen\\mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -IC:/Projekte/Projekt/repo/build/simple_test_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Projekte/Projekt/repo/googletest/googletest/include -isystem C:/Projekte/Projekt/repo/googletest/googletest -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17 -o CMakeFiles\\simple_test.dir\\test_simple.cpp.obj -c C:\\Projekte\\Projekt\\repo\\test_simple.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\test_simple.cpp",
+  "output": "CMakeFiles\\simple_test.dir\\test_simple.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -IC:/Projekte/Projekt/repo/build/googletest/googlemock/gmock_autogen/include -IC:/Projekte/Projekt/repo/googletest/googlemock/include -IC:/Projekte/Projekt/repo/googletest/googlemock -isystem C:/Projekte/Projekt/repo/googletest/googletest/include -isystem C:/Projekte/Projekt/repo/googletest/googletest -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest\\googlemock\\CMakeFiles\\gmock.dir\\gmock_autogen\\mocs_compilation.cpp.obj -c C:\\Projekte\\Projekt\\repo\\build\\googletest\\googlemock\\gmock_autogen\\mocs_compilation.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\build\\googletest\\googlemock\\gmock_autogen\\mocs_compilation.cpp",
+  "output": "googletest\\googlemock\\CMakeFiles\\gmock.dir\\gmock_autogen\\mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -IC:/Projekte/Projekt/repo/build/googletest/googlemock/gmock_autogen/include -IC:/Projekte/Projekt/repo/googletest/googlemock/include -IC:/Projekte/Projekt/repo/googletest/googlemock -isystem C:/Projekte/Projekt/repo/googletest/googletest/include -isystem C:/Projekte/Projekt/repo/googletest/googletest -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c C:\\Projekte\\Projekt\\repo\\googletest\\googlemock\\src\\gmock-all.cc",
+  "file": "C:\\Projekte\\Projekt\\repo\\googletest\\googlemock\\src\\gmock-all.cc",
+  "output": "googletest\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -IC:/Projekte/Projekt/repo/build/googletest/googlemock/gmock_main_autogen/include -isystem C:/Projekte/Projekt/repo/googletest/googlemock/include -isystem C:/Projekte/Projekt/repo/googletest/googlemock -isystem C:/Projekte/Projekt/repo/googletest/googletest/include -isystem C:/Projekte/Projekt/repo/googletest/googletest -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest\\googlemock\\CMakeFiles\\gmock_main.dir\\gmock_main_autogen\\mocs_compilation.cpp.obj -c C:\\Projekte\\Projekt\\repo\\build\\googletest\\googlemock\\gmock_main_autogen\\mocs_compilation.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\build\\googletest\\googlemock\\gmock_main_autogen\\mocs_compilation.cpp",
+  "output": "googletest\\googlemock\\CMakeFiles\\gmock_main.dir\\gmock_main_autogen\\mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -IC:/Projekte/Projekt/repo/build/googletest/googlemock/gmock_main_autogen/include -isystem C:/Projekte/Projekt/repo/googletest/googlemock/include -isystem C:/Projekte/Projekt/repo/googletest/googlemock -isystem C:/Projekte/Projekt/repo/googletest/googletest/include -isystem C:/Projekte/Projekt/repo/googletest/googletest -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest\\googlemock\\CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c C:\\Projekte\\Projekt\\repo\\googletest\\googlemock\\src\\gmock_main.cc",
+  "file": "C:\\Projekte\\Projekt\\repo\\googletest\\googlemock\\src\\gmock_main.cc",
+  "output": "googletest\\googlemock\\CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -IC:/Projekte/Projekt/repo/build/googletest/googletest/gtest_autogen/include -IC:/Projekte/Projekt/repo/googletest/googletest/include -IC:/Projekte/Projekt/repo/googletest/googletest -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest\\googletest\\CMakeFiles\\gtest.dir\\gtest_autogen\\mocs_compilation.cpp.obj -c C:\\Projekte\\Projekt\\repo\\build\\googletest\\googletest\\gtest_autogen\\mocs_compilation.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\build\\googletest\\googletest\\gtest_autogen\\mocs_compilation.cpp",
+  "output": "googletest\\googletest\\CMakeFiles\\gtest.dir\\gtest_autogen\\mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -IC:/Projekte/Projekt/repo/build/googletest/googletest/gtest_autogen/include -IC:/Projekte/Projekt/repo/googletest/googletest/include -IC:/Projekte/Projekt/repo/googletest/googletest -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest\\googletest\\CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c C:\\Projekte\\Projekt\\repo\\googletest\\googletest\\src\\gtest-all.cc",
+  "file": "C:\\Projekte\\Projekt\\repo\\googletest\\googletest\\src\\gtest-all.cc",
+  "output": "googletest\\googletest\\CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -IC:/Projekte/Projekt/repo/build/googletest/googletest/gtest_main_autogen/include -isystem C:/Projekte/Projekt/repo/googletest/googletest/include -isystem C:/Projekte/Projekt/repo/googletest/googletest -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest\\googletest\\CMakeFiles\\gtest_main.dir\\gtest_main_autogen\\mocs_compilation.cpp.obj -c C:\\Projekte\\Projekt\\repo\\build\\googletest\\googletest\\gtest_main_autogen\\mocs_compilation.cpp",
+  "file": "C:\\Projekte\\Projekt\\repo\\build\\googletest\\googletest\\gtest_main_autogen\\mocs_compilation.cpp",
+  "output": "googletest\\googletest\\CMakeFiles\\gtest_main.dir\\gtest_main_autogen\\mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Projekte/Projekt/repo/build",
+  "command": "C:\\Qt\\Tools\\mingw1120_64\\bin\\g++.exe -IC:/Projekte/Projekt/repo/build/googletest/googletest/gtest_main_autogen/include -isystem C:/Projekte/Projekt/repo/googletest/googletest/include -isystem C:/Projekte/Projekt/repo/googletest/googletest -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest\\googletest\\CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c C:\\Projekte\\Projekt\\repo\\googletest\\googletest\\src\\gtest_main.cc",
+  "file": "C:\\Projekte\\Projekt\\repo\\googletest\\googletest\\src\\gtest_main.cc",
+  "output": "googletest\\googletest\\CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj"
+}
+]
