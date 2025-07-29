@@ -12,7 +12,7 @@ void TaskManager::addAufgabe(const Task& neueAufgabe)   //fertiges Task Objekt (
     int neuerIndex = v_tasks.size();                    //Anzahl der Indizes wächst mit Größe des vectors
     Task task_neu(neuerIndex, neueAufgabe.getTitel(), neueAufgabe.getBeschreibung(), neueAufgabe.getFaelligkeitsdatum(), neueAufgabe.getIstErledigt()); //neues Task Objekt erstellen und in vector einfügen
     v_tasks.push_back(task_neu);
-};
+}
 
 void TaskManager::delAufgabe(const int Index)
 {
@@ -23,7 +23,7 @@ void TaskManager::delAufgabe(const int Index)
     {
         cout << "Index error beim Versuch, die Aufgabe zu löschen!";
     }
-};
+}
 
 Task* TaskManager::findAufgabe(const int Index)
 {
@@ -43,12 +43,12 @@ Task* TaskManager::findAufgabe(const int Index)
         cout << "Index Error: Index out of range!";
         return nullptr;
     }
-};
+}
 
 const vector<Task>& TaskManager::getTasks() const
 {
     return v_tasks;                                     //Für Auflisten der Aufgaben in GUI
-};
+}
 
 void TaskManager::saveAufgaben()                        //Komplette Datei wird bbei Aufruf neu geschrieben, bei dieser Datenmenge jedoch egal!
 {
@@ -71,7 +71,7 @@ void TaskManager::saveAufgaben()                        //Komplette Datei wird b
         cout << "Datei konnte nicht für das speichern geöffnet werden!";
     }
     TasksFile.close();
-};
+}
 
 void TaskManager::loadAufgaben()
 {
@@ -115,7 +115,7 @@ void TaskManager::editAufgabe(const int index, string neuerTitel, string neueBes
     {
         cout << "Index error beim Versuch, die Aufgabe zu bearbeiten!";
     }
-};
+}
 
 vector<Task>& TaskManager::getTasks()                   //weitere - nicht const - Methode, damit Referenz veränderbar ist
 {
