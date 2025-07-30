@@ -274,6 +274,12 @@
 			null
 		],
 		[
+			"C:/Projekte/Projekt/repo/TaskController.h",
+			"MU",
+			"EWIEGA46WW/moc_TaskController.cpp",
+			null
+		],
+		[
 			"C:/Projekte/Projekt/repo/TaskManager.h",
 			"MU",
 			"EWIEGA46WW/moc_TaskManager.cpp",
@@ -371,6 +377,7 @@
 			null
 		],
 		[ "C:/Projekte/Projekt/repo/Task.cpp", "MU", null ],
+		[ "C:/Projekte/Projekt/repo/TaskController.cpp", "MU", null ],
 		[ "C:/Projekte/Projekt/repo/TaskManager.cpp", "MU", null ],
 		[ "C:/Projekte/Projekt/repo/main.cpp", "MU", null ]
 	],

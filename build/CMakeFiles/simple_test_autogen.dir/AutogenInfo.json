@@ -235,7 +235,27 @@
 	"CROSS_CONFIG" : false,
 	"DEP_FILE" : "C:/Projekte/Projekt/repo/build/simple_test_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "simple_test_autogen/timestamp",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"C:/Projekte/Projekt/repo/Task.h",
+			"MU",
+			"EWIEGA46WW/moc_Task.cpp",
+			null
+		],
+		[
+			"C:/Projekte/Projekt/repo/TaskController.h",
+			"MU",
+			"EWIEGA46WW/moc_TaskController.cpp",
+			null
+		],
+		[
+			"C:/Projekte/Projekt/repo/TaskManager.h",
+			"MU",
+			"EWIEGA46WW/moc_TaskManager.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "C:/Projekte/Projekt/repo/build/simple_test_autogen/include",
 	"MOC_COMPILATION_FILE" : "C:/Projekte/Projekt/repo/build/simple_test_autogen/mocs_compilation.cpp",
@@ -311,6 +331,9 @@
 	"SETTINGS_FILE" : "C:/Projekte/Projekt/repo/build/CMakeFiles/simple_test_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/Projekte/Projekt/repo/Task.cpp", "MU", null ],
+		[ "C:/Projekte/Projekt/repo/TaskController.cpp", "MU", null ],
+		[ "C:/Projekte/Projekt/repo/TaskManager.cpp", "MU", null ],
 		[ "C:/Projekte/Projekt/repo/test_simple.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

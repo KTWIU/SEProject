@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QVector>
 #include "../TaskManager.h"           //Einbinden der eigenen Klasse zum verwalten der Aufgaben
+#include "../TaskController.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -35,7 +36,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    TaskManager taskManager;                                                    //Objekt zum verwalten der Aufgaben (Backend)
+    TaskManager taskManager;
+    TaskController* taskController;
     QVector<int> guiToVectorIndex;                                              //Zuordnungsliste zwischen den QListWidget einträgen und tatsächlichen Aufgaben Indizes
     void refreshListWidget();                                                   //Funktion, die ListWidget und Mapping nach Aktion (z.B. bearbeiten...) aktualisiert/neu aufbaut
 };

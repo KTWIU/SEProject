@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include "./ui_mainwindow.h"
+#include "ui_mainwindow.h"
 #include "dialogtaskbearbeiten.h"
 #include "dialogtaskhinzufuegen.h"
 #include "erledigteaufgabenliste.h"
@@ -15,14 +15,15 @@ MainWindow::MainWindow(QWidget *parent)                                         
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    taskManager.loadAufgaben();                                                                 //Aufgaben beim Starten der Anwendung laden (backend)
+    taskController = new TaskController(&taskManager);                                          //dem controller das Modell (taskManager) übergeben
+    taskController->load();                                                                     //Aufgaben beim Starten der Anwendung laden 
     refreshListWidget();                                                                        //Aktualisieren von Mapping & ListWidget
 
     ui->listWidget->clear();                                                                    //sicherstellen, dass Anzeige-Liste leer ist (nur GUI, nicht gespeicherten Aufgaben)
     guiToVectorIndex.clear();                                                                   //Mapping leeren
 
 
-    const auto& tasks = taskManager.getTasks();                                                 //alle gespeicherten Aufgaben holen (aus dem Tasks vector)
+    const auto& tasks = taskController->getTasks();                                             //alle gespeicherten Aufgaben holen 
     for (int i = 0; i < tasks.size(); ++i)                                                      //Schleife über alle Aufgaben
     {
         const Task& t = tasks[i];
@@ -42,7 +43,7 @@ MainWindow::MainWindow(QWidget *parent)                                         
 
 MainWindow::~MainWindow()                                                                       //Destruktor
 {
-    taskManager.saveAufgaben();                                                                 //speichern vor dem beenden der Anwendung
+    taskController->save();                                                                    //speichern vor dem beenden der Anwendung
     delete ui;
 }
 
@@ -66,10 +67,7 @@ void MainWindow::on_pBAufgabeHinzufuegen_clicked()                              
             return;
         };
 
-                                                                                                //Aufgabe anlegen, index Vergabe regelt TaskManager (backend)
-        taskManager.addAufgabe(Task(0, titel.toStdString(), beschreibung.toStdString(), faelligkeitsdatum.toString("yyyy-MM-dd").toStdString(), false));
-
-        taskManager.saveAufgaben();                                                             //speichern, nachdem eine Aufgabe hinzugefügt wurde
+        taskController->addAufgabe(titel.toStdString(), beschreibung.toStdString(), faelligkeitsdatum.toString("yyyy-MM-dd").toStdString());
 
         refreshListWidget();
 
@@ -83,18 +81,16 @@ void MainWindow::on_pBAufgabeErledigt_clicked()                                 
     if(guiIndex >= 0)
     {
         int realIndex = guiToVectorIndex.at(guiIndex);                                          //Mapping auf echten Vector-Index!
-        taskManager.getTasks().at(realIndex).setIstErledigt(true);                              //Im TaskManager als erledigt markieren
-
+        taskController->markiereAufgabeAlsErledigt(realIndex);
         delete ui->listWidget->takeItem(guiIndex);                                              //Aus der Liste (MainWindow) entfernen
-
-        taskManager.saveAufgaben();                                                             //Speichern, nachdem eine Aufgabe erledigt
+        refreshListWidget();
     }
 }
 
 void MainWindow::on_pBErledigteA_clicked()                                                      //Methode: Logik für Liste der erledigten Aufgabenm
 {
     erledigteAufgabenliste dialog(this);                                                        //Dialogfenster erstellen
-    const auto& tasks = taskManager.getTasks();
+    const auto& tasks = taskController->getTasks();
 
     for(const Task& t : tasks) {                                                                //Iteriert über alle Element
         if (t.getIstErledigt()) {
@@ -108,7 +104,7 @@ void MainWindow::on_pBErledigteA_clicked()                                      
 void MainWindow::on_pBUeberfaelligeA_clicked()                                                  //Methode: Logik für Liste der überfälligen Aufgaben
 {
     ueberfaelligeAufgaben dialog(this);                                                         //Dialog erstellen
-    const auto& tasks = taskManager.getTasks();                                                 //vector mit Tasks
+    const auto& tasks = taskController->getTasks();                                                //vector mit Tasks
 
     QDate today = QDate::currentDate();                                                         //aktuelles Datum
 
@@ -133,9 +129,7 @@ void MainWindow::on_pBAufgabeEntfernen_clicked()                                
         int realIndex = guiToVectorIndex.at(guiIndex);
         if(guiIndex >= 0)
         {
-            taskManager.delAufgabe(realIndex);                                                  //Aus TaskManager-Vector entfernen (über Index)
-            taskManager.saveAufgaben();                                                         //nach Entfernen einer Aufgabe speichern
-
+            taskController->delAufgabe(realIndex);
             refreshListWidget();
         }
     }
@@ -151,7 +145,7 @@ void MainWindow::on_listWidget_itemDoubleClicked(QListWidgetItem *item)         
     };
 
     int realIndex = guiToVectorIndex.at(guiIndex);                                              //Mapping
-    const Task& t = taskManager.getTasks().at(realIndex);                                       //ausgewählte Aufgabe mit tatsächlichen Index aus vector holen
+    const Task& t = taskController->getTasks().at(realIndex);                                   //ausgewählte Aufgabe mit tatsächlichen Index holen
 
     DialogTaskBearbeiten dialog(this);                                                          //Bearbeiten Dialog erstellen (this = mainwindow)
     dialog.setTitel(QString::fromStdString(t.getTitel()));                                      //bisherige Attribute holen
@@ -163,10 +157,9 @@ void MainWindow::on_listWidget_itemDoubleClicked(QListWidgetItem *item)         
         QString neuerTitel = dialog.findChild<QLineEdit*>("titel")->text();                     //neuen Attribute im Eingabefeld schreiben
         QString neueBeschreibung = dialog.findChild<QTextEdit*>("beschreibung")->toPlainText(); //Zeiger auf das Widget (benötigt findChild)
         QDate neuesDatum = dialog.findChild<QDateEdit*>("faelligkeitsdatum")->date();
-        //Jetzt an TaskManager übergeben (backend)
-        taskManager.editAufgabe(realIndex, neuerTitel.toStdString(), neueBeschreibung.toStdString(), neuesDatum.toString("yyyy-MM-dd").toStdString());
+        
+        taskController->editAufgabe(realIndex, neuerTitel.toStdString(), neueBeschreibung.toStdString(), neuesDatum.toString("yyyy-MM-dd").toStdString());
 
-        taskManager.saveAufgaben();                                                             //Speichern
         refreshListWidget();
     }
 }
@@ -176,7 +169,7 @@ void MainWindow::refreshListWidget()
     ui->listWidget->clear();                                                                    //ListWidget leeren bzw. GUI-Anzeige zurücksetzen
     guiToVectorIndex.clear();                                                                   //Mapping-Vektor leeren
 
-    const auto& tasks = taskManager.getTasks();
+    const auto& tasks = taskController->getTasks();
     QDate today = QDate::currentDate();
     for(int i = 0; i < tasks.size(); ++i)                                                       //durch alle Tasks iterieren
     {

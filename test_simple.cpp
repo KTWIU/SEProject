@@ -1,8 +1,6 @@
 #include <gtest/gtest.h>
-#include "TaskManager.h" 
-#include "TaskManager.cpp" 
-#include "Task.h" 
-#include "Task.cpp"
+#include "TaskManager.h"
+#include "Task.h"
 #include <QString>
 #include <QDate>
 
@@ -49,7 +47,7 @@ TEST(UnitTest_TaskManagerFunktionen, T03_addAufgabeIndexCounter)
 {
     TaskManager manager;
     int size_before = manager.getTasks().size();
-    manager.addAufgabe(Task(size_before, "Test", "testen des Index Counters", "2025-07-27", false));
+    manager.addTask(Task(size_before, "Test", "testen des Index Counters", "2025-07-27", false));
     int size_after = manager.getTasks().size();
     EXPECT_EQ(size_before + 1, size_after);
 }
@@ -57,9 +55,9 @@ TEST(UnitTest_TaskManagerFunktionen, T03_addAufgabeIndexCounter)
 TEST(UnitTest_TaskManagerFunktionen, T04_delAufgabeMoveTasks)
 {
     TaskManager manager;
-    manager.addAufgabe(Task(0, "Test", "Beschreibung", "2025-07-27", false));
+    manager.addTask(Task(0, "Test", "Beschreibung", "2025-07-27", false));
     int size_before = manager.getTasks().size();
-    manager.delAufgabe(size_before - 1);
+    manager.deleteTask(size_before - 1);
     int size_after = manager.getTasks().size();
     EXPECT_EQ(size_before - 1, size_after);
 }
@@ -69,7 +67,7 @@ TEST(UnitTest_TaskManagerFunktionen, T04_delAufgabeMoveTasks)
 TEST(Integrationstest_Workflow, T05_AnwenderWorkflow)
 {
     TaskManager manager;                                                                    //testen nur im Ram                                                                                    
-    manager.addAufgabe(Task(0, "Integrationstest", "Test", "2025-07-25", false));
+    manager.addTask(Task(0, "Integrationstest", "Test", "2025-07-25", false));
     manager.editAufgabe(0, "Erfolg", "TestErfolg", "2025-12-24");
     auto& tasks = manager.getTasks();
     ASSERT_EQ(tasks.size(), 1);                                                             //testen ob vector immer noch größe 1 hat
