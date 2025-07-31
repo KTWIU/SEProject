@@ -233,7 +233,7 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "gtest::@f95b5c00bd49b3b4698d",
-					"jsonFile" : "target-gtest-Debug-d13d0715d05dc9e09e6c.json",
+					"jsonFile" : "target-gtest-Debug-569ca65bfff69735836f.json",
 					"name" : "gtest",
 					"projectIndex" : 3
 				},
@@ -275,7 +275,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "simple_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-simple_test-Debug-d261e7b2f1b500377f26.json",
+					"jsonFile" : "target-simple_test-Debug-79cb8c3c9a89c3556007.json",
 					"name" : "simple_test",
 					"projectIndex" : 0
 				},

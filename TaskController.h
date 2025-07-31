@@ -10,7 +10,7 @@ class TaskController
     private:
         TaskInterface* taskInterface;
 
-    public:
+    public:                                                             //Methoden für die View
         TaskController(TaskInterface* interface);
         void addAufgabe(const string& titel, const string& beschreibung, const string& faelligkeitsdatum);
         void delAufgabe(int index);

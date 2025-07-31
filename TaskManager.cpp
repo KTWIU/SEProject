@@ -5,13 +5,13 @@
 #include <sstream>
 
 
-TaskManager::TaskManager() {}                           //Konstruktor
+TaskManager::TaskManager() {}                                                               //Konstruktor des TaskManagers
 
-void TaskManager::addTask(const Task& task) {
+void TaskManager::addTask(const Task& task) {                                               //Fügt neue Aufgabe zur Aufgabenliste hinzu
     v_tasks.push_back(task);
 }
 
-void TaskManager::deleteTask(int index) {
+void TaskManager::deleteTask(int index) {                                                   //Löscht eine Aufgabe an der angegebenen Indexposition
     if (index >= 0 && index < v_tasks.size()) {
         v_tasks.erase(v_tasks.begin() + index);
     } else {
@@ -19,7 +19,7 @@ void TaskManager::deleteTask(int index) {
     }
 }
 
-void TaskManager::markiereAufgabeAlsErledigt(int index) {
+void TaskManager::markiereAufgabeAlsErledigt(int index) {                                   //Markiert Aufgabe als erledigt (istErledigt Attribut = true)
     if (index >= 0 && index < v_tasks.size()) {
         v_tasks[index].setIstErledigt(true);
     } else {
@@ -27,15 +27,15 @@ void TaskManager::markiereAufgabeAlsErledigt(int index) {
     }
 }
 
-vector<Task>& TaskManager::getTasks() {
+vector<Task>& TaskManager::getTasks() {                                                     //gibt (nicht const) Vektor aller Aufgaben zurück
     return v_tasks;
 }
 
-const vector<Task>& TaskManager::getTasks() const {
+const vector<Task>& TaskManager::getTasks() const {                                         //gibt einen const Vektor aller Aufgaben zurück
     return v_tasks;
 }
 
-void TaskManager::saveAufgaben() {
+void TaskManager::saveAufgaben() {                                                          //speichern aller AUfgaben in die CSV Datei (Persistenzschicht)
     ofstream TasksFile("TasksFile.csv");
     if (TasksFile.is_open()) {
         TasksFile << "Index;Titel;Beschreibung;Faelligkeitsdatum;Erledigt;" << endl;
@@ -49,7 +49,7 @@ void TaskManager::saveAufgaben() {
     TasksFile.close();
 }
 
-void TaskManager::loadAufgaben() {
+void TaskManager::loadAufgaben() {                                                          //Aufgaben aus der csv-Datei lesen und AUfgabenliste befüllen
     v_tasks.clear();
     string line;
     ifstream TasksFile("TasksFile.csv");
@@ -74,9 +74,9 @@ void TaskManager::loadAufgaben() {
 }
 
 int TaskManager::getNextIndex() {
-    return v_tasks.size();
+    return v_tasks.size();                                                                              //Tatsächlicher Index der auch nach Löschen von Aufgaben stimmt
 }
-
+                                                                                                        //Attribute einer vorhandenen AUfgabe bearbeiten
 void TaskManager::editAufgabe(int index, const std::string& neuerTitel, const std::string& neueBeschreibung, const std::string& neuesFaelligkeitsdatum)
 {
     if (index >= 0 && index < v_tasks.size())

@@ -226,11 +226,11 @@
 			"id" : "gtest_main::@f95b5c00bd49b3b4698d"
 		},
 		{
-			"backtrace" : 0,
-			"id" : "simple_test_autogen::@6890427a1f51a3e7e1df"
+			"id" : "simple_test_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "simple_test_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "simple_test_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "simple_test::@6890427a1f51a3e7e1df",
