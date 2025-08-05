@@ -17,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent)                                         
     ui->setupUi(this);
     taskController = new TaskController(&taskManager);                                          //dem controller das Modell (taskManager) übergeben
     taskController->load();                                                                     //Aufgaben beim Starten der Anwendung laden 
-    refreshListWidget();                                                                        //Aktualisieren von Mapping & ListWidget
+    zeigeAufgaben(taskController->getTasks());;                                                                        //Aktualisieren von Mapping & ListWidget
 
     ui->listWidget->clear();                                                                    //sicherstellen, dass Anzeige-Liste leer ist (nur GUI, nicht gespeicherten Aufgaben)
     guiToVectorIndex.clear();                                                                   //Mapping leeren
@@ -69,7 +69,7 @@ void MainWindow::on_pBAufgabeHinzufuegen_clicked()                              
 
         taskController->addAufgabe(titel.toStdString(), beschreibung.toStdString(), faelligkeitsdatum.toString("yyyy-MM-dd").toStdString());
 
-        refreshListWidget();
+        zeigeAufgaben(taskController->getTasks());;
 
     }
 }
@@ -83,7 +83,7 @@ void MainWindow::on_pBAufgabeErledigt_clicked()                                 
         int realIndex = guiToVectorIndex.at(guiIndex);                                          //Mapping auf echten Vector-Index!
         taskController->markiereAufgabeAlsErledigt(realIndex);
         delete ui->listWidget->takeItem(guiIndex);                                              //Aus der Liste (MainWindow) entfernen
-        refreshListWidget();
+        zeigeAufgaben(taskController->getTasks());;
     }
 }
 
@@ -130,7 +130,7 @@ void MainWindow::on_pBAufgabeEntfernen_clicked()                                
         if(guiIndex >= 0)
         {
             taskController->delAufgabe(realIndex);
-            refreshListWidget();
+            zeigeAufgaben(taskController->getTasks());;
         }
     }
 }
@@ -160,21 +160,20 @@ void MainWindow::on_listWidget_itemDoubleClicked(QListWidgetItem *item)         
         
         taskController->editAufgabe(realIndex, neuerTitel.toStdString(), neueBeschreibung.toStdString(), neuesDatum.toString("yyyy-MM-dd").toStdString());
 
-        refreshListWidget();
+        zeigeAufgaben(taskController->getTasks());;
     }
 }
 
-void MainWindow::refreshListWidget()
+void MainWindow::zeigeAufgaben(const std::vector<Task>& aufgaben)
 {
-    ui->listWidget->clear();                                                                    //ListWidget leeren bzw. GUI-Anzeige zurücksetzen
-    guiToVectorIndex.clear();                                                                   //Mapping-Vektor leeren
+    ui->listWidget->clear();
+    guiToVectorIndex.clear();
 
-    const auto& tasks = taskController->getTasks();
     QDate today = QDate::currentDate();
-    for(int i = 0; i < tasks.size(); ++i)                                                       //durch alle Tasks iterieren
+    for (int i = 0; i < aufgaben.size(); ++i)
     {
-        const Task& t = tasks[i];                                                               //aktuelles Taskobjekt holen
-        if(!t.getIstErledigt())                                                                 //nur offene Aufgaben anzeigen
+        const Task& t = aufgaben[i];
+        if(!t.getIstErledigt())
         {
             QDate faellig = QDate::fromString(QString::fromStdString(t.getFaelligkeitsdatum()), "yyyy-MM-dd");
             QString statusText = (faellig.isValid() && faellig < today) ? "Überfällig" : "Offen";
@@ -182,8 +181,13 @@ void MainWindow::refreshListWidget()
                                + QString::fromStdString(t.getBeschreibung()) + " | "
                                + QString::fromStdString(t.getFaelligkeitsdatum()) + " | "
                                + statusText;
-            ui->listWidget->addItem(itemText);                                                  //Task in die GUI-Liste einfügen
-            guiToVectorIndex.append(i);                                                         //Mapping von GUI-Index zu Task Index herstellen
+            ui->listWidget->addItem(itemText);
+            guiToVectorIndex.append(i);
         }
     }
+}
+
+void MainWindow::zeigeFehlermeldung(const std::string& meldung)
+{
+    QMessageBox::warning(this, "Fehler", QString::fromStdString(meldung));
 }

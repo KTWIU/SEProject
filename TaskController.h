@@ -4,8 +4,10 @@
 #include <string>
 #include "Task.h"
 #include "TaskInterface.h"
+#include "TaskControllerInterface.h"
 
-class TaskController
+
+class TaskController : public TaskControllerInterface
 {
     private:
         TaskInterface* taskInterface;

@@ -5,6 +5,8 @@
 #include <QVector>
 #include "../TaskManager.h"           //Einbinden der eigenen Klasse zum verwalten der Aufgaben
 #include "../TaskController.h"
+#include "../ViewInterface.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -12,11 +14,13 @@ class MainWindow;
 }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
+class MainWindow : public QMainWindow, public ViewInterface
 {
     Q_OBJECT
 
 public:
+    void zeigeAufgaben(const std::vector<Task>& aufgaben) override;
+    void zeigeFehlermeldung(const std::string& meldung) override;
     MainWindow(QWidget *parent = nullptr);                                      //Konstruktor des MainWindows
     ~MainWindow();                                                              //Destruktor
 
@@ -39,7 +43,6 @@ private:
     TaskManager taskManager;
     TaskController* taskController;
     QVector<int> guiToVectorIndex;                                              //Zuordnungsliste zwischen den QListWidget einträgen und tatsächlichen Aufgaben Indizes
-    void refreshListWidget();                                                   //Funktion, die ListWidget und Mapping nach Aktion (z.B. bearbeiten...) aktualisiert/neu aufbaut
 };
 
 #endif // MAINWINDOW_H

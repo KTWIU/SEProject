@@ -1,4 +1,5 @@
 #include "TaskManager.h"
+#include "TaskFactory.h"
 #include <algorithm>
 #include <iostream>
 #include <fstream>
@@ -65,7 +66,7 @@ void TaskManager::loadAufgaben() {                                              
             getline(ss, tempIstErledigt, ';');
             int index = stoi(tempIndex);
             bool istErledigt = (tempIstErledigt == "1" || tempIstErledigt == "true");
-            v_tasks.emplace_back(index, titel, beschreibung, faelligkeitsdatum, istErledigt);
+            v_tasks.emplace_back(TaskFactory::createTask(index, titel, beschreibung, faelligkeitsdatum, istErledigt));
         }
     } else {
         cout << "Datei konnte beim Laden nicht geöffnet werden!" << endl;

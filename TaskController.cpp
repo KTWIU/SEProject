@@ -1,11 +1,12 @@
 #include "TaskController.h"
+#include "TaskFactory.h"
 
 TaskController::TaskController(TaskInterface* interface) : taskInterface(interface){}                             //Methoden für View
 
 void TaskController::addAufgabe(const string& titel, const string& beschreibung, const string& faelligkeitsdatum) 
 {
     int neuerIndex = taskInterface->getNextIndex();
-    Task neueAufgabe(neuerIndex, titel, beschreibung, faelligkeitsdatum, false);                                  //neues Task Objekt erstellen
+    Task neueAufgabe = TaskFactory::createTask(neuerIndex, titel, beschreibung, faelligkeitsdatum, false);         //neues Task Objekt erstellen mit Factory
     taskInterface->addTask(neueAufgabe);                                                                          //Objekt in vector pushen
     taskInterface->saveAufgaben();                                                                                //Speichert direkt die Aufgaben nach jeder neuen
 }

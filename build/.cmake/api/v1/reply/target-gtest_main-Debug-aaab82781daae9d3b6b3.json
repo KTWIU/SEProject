@@ -132,11 +132,11 @@
 			"id" : "gtest::@f95b5c00bd49b3b4698d"
 		},
 		{
-			"id" : "gtest_main_autogen_timestamp_deps::@f95b5c00bd49b3b4698d"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "gtest_main_autogen::@f95b5c00bd49b3b4698d"
+		},
+		{
+			"id" : "gtest_main_autogen_timestamp_deps::@f95b5c00bd49b3b4698d"
 		}
 	],
 	"id" : "gtest_main::@f95b5c00bd49b3b4698d",
