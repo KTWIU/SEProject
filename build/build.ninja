@@ -94,6 +94,15 @@ build CMakeFiles/AufgabenTracker.dir/TaskController.cpp.obj: CXX_COMPILER__Aufga
   OBJECT_DIR = CMakeFiles\AufgabenTracker.dir
   OBJECT_FILE_DIR = CMakeFiles\AufgabenTracker.dir
 
+build CMakeFiles/AufgabenTracker.dir/TaskFactory.cpp.obj: CXX_COMPILER__AufgabenTracker_unscanned_Debug C$:/Projekte/Projekt/repo/TaskFactory.cpp || cmake_object_order_depends_target_AufgabenTracker
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\AufgabenTracker.dir\TaskFactory.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17
+  INCLUDES = -IC:/Projekte/Projekt/repo/build/AufgabenTracker_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.6.2/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\AufgabenTracker.dir
+  OBJECT_FILE_DIR = CMakeFiles\AufgabenTracker.dir
+
 build CMakeFiles/AufgabenTracker.dir/Aufgabenplaner/mainwindow.cpp.obj: CXX_COMPILER__AufgabenTracker_unscanned_Debug C$:/Projekte/Projekt/repo/Aufgabenplaner/mainwindow.cpp || cmake_object_order_depends_target_AufgabenTracker
   CONFIG = Debug
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
@@ -147,7 +156,7 @@ build CMakeFiles/AufgabenTracker.dir/Aufgabenplaner/ueberfaelligeaufgaben.cpp.ob
 #############################################
 # Link the executable AufgabenTracker.exe
 
-build AufgabenTracker.exe: CXX_EXECUTABLE_LINKER__AufgabenTracker_Debug CMakeFiles/AufgabenTracker.dir/AufgabenTracker_autogen/mocs_compilation.cpp.obj CMakeFiles/AufgabenTracker.dir/main.cpp.obj CMakeFiles/AufgabenTracker.dir/Task.cpp.obj CMakeFiles/AufgabenTracker.dir/TaskManager.cpp.obj CMakeFiles/AufgabenTracker.dir/TaskController.cpp.obj CMakeFiles/AufgabenTracker.dir/Aufgabenplaner/mainwindow.cpp.obj CMakeFiles/AufgabenTracker.dir/Aufgabenplaner/dialogtaskbearbeiten.cpp.obj CMakeFiles/AufgabenTracker.dir/Aufgabenplaner/dialogtaskhinzufuegen.cpp.obj CMakeFiles/AufgabenTracker.dir/Aufgabenplaner/erledigteaufgabenliste.cpp.obj CMakeFiles/AufgabenTracker.dir/Aufgabenplaner/ueberfaelligeaufgaben.cpp.obj | C$:/Qt/6.6.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Core.a || AufgabenTracker_autogen AufgabenTracker_autogen_timestamp_deps
+build AufgabenTracker.exe: CXX_EXECUTABLE_LINKER__AufgabenTracker_Debug CMakeFiles/AufgabenTracker.dir/AufgabenTracker_autogen/mocs_compilation.cpp.obj CMakeFiles/AufgabenTracker.dir/main.cpp.obj CMakeFiles/AufgabenTracker.dir/Task.cpp.obj CMakeFiles/AufgabenTracker.dir/TaskManager.cpp.obj CMakeFiles/AufgabenTracker.dir/TaskController.cpp.obj CMakeFiles/AufgabenTracker.dir/TaskFactory.cpp.obj CMakeFiles/AufgabenTracker.dir/Aufgabenplaner/mainwindow.cpp.obj CMakeFiles/AufgabenTracker.dir/Aufgabenplaner/dialogtaskbearbeiten.cpp.obj CMakeFiles/AufgabenTracker.dir/Aufgabenplaner/dialogtaskhinzufuegen.cpp.obj CMakeFiles/AufgabenTracker.dir/Aufgabenplaner/erledigteaufgabenliste.cpp.obj CMakeFiles/AufgabenTracker.dir/Aufgabenplaner/ueberfaelligeaufgaben.cpp.obj | C$:/Qt/6.6.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.6.2/mingw_64/lib/libQt6Core.a || AufgabenTracker_autogen AufgabenTracker_autogen_timestamp_deps
   CONFIG = Debug
   FLAGS = -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g
   LINK_LIBRARIES = C:/Qt/6.6.2/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.6.2/mingw_64/lib/libQt6Gui.a  C:/Qt/6.6.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -212,6 +221,15 @@ build CMakeFiles/simple_test.dir/TaskController.cpp.obj: CXX_COMPILER__simple_te
   OBJECT_DIR = CMakeFiles\simple_test.dir
   OBJECT_FILE_DIR = CMakeFiles\simple_test.dir
 
+build CMakeFiles/simple_test.dir/TaskFactory.cpp.obj: CXX_COMPILER__simple_test_unscanned_Debug C$:/Projekte/Projekt/repo/TaskFactory.cpp || cmake_object_order_depends_target_simple_test
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\simple_test.dir\TaskFactory.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++17
+  INCLUDES = -IC:/Projekte/Projekt/repo/build/simple_test_autogen/include -isystem C:/Qt/6.6.2/mingw_64/include/QtCore -isystem C:/Qt/6.6.2/mingw_64/include -isystem C:/Qt/6.6.2/mingw_64/mkspecs/win32-g++ -isystem C:/Projekte/Projekt/repo/googletest/googletest/include -isystem C:/Projekte/Projekt/repo/googletest/googletest
+  OBJECT_DIR = CMakeFiles\simple_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\simple_test.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target simple_test
@@ -220,7 +238,7 @@ build CMakeFiles/simple_test.dir/TaskController.cpp.obj: CXX_COMPILER__simple_te
 #############################################
 # Link the executable simple_test.exe
 
-build simple_test.exe: CXX_EXECUTABLE_LINKER__simple_test_Debug CMakeFiles/simple_test.dir/simple_test_autogen/mocs_compilation.cpp.obj CMakeFiles/simple_test.dir/test_simple.cpp.obj CMakeFiles/simple_test.dir/Task.cpp.obj CMakeFiles/simple_test.dir/TaskManager.cpp.obj CMakeFiles/simple_test.dir/TaskController.cpp.obj | C$:/Qt/6.6.2/mingw_64/lib/libQt6Core.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a simple_test_autogen simple_test_autogen_timestamp_deps
+build simple_test.exe: CXX_EXECUTABLE_LINKER__simple_test_Debug CMakeFiles/simple_test.dir/simple_test_autogen/mocs_compilation.cpp.obj CMakeFiles/simple_test.dir/test_simple.cpp.obj CMakeFiles/simple_test.dir/Task.cpp.obj CMakeFiles/simple_test.dir/TaskManager.cpp.obj CMakeFiles/simple_test.dir/TaskController.cpp.obj CMakeFiles/simple_test.dir/TaskFactory.cpp.obj | C$:/Qt/6.6.2/mingw_64/lib/libQt6Core.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a simple_test_autogen simple_test_autogen_timestamp_deps
   CONFIG = Debug
   FLAGS = -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g
   LINK_LIBRARIES = C:/Qt/6.6.2/mingw_64/lib/libQt6Core.a  lib/libgtest.a  lib/libgtest_main.a  -lmpr  -luserenv  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

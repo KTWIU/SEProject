@@ -1,0 +1,6 @@
+gmock_autogen/timestamp: \
+	C:/Projekte/Projekt/repo/googletest/googlemock/CMakeLists.txt \
+	C:/Projekte/Projekt/repo/googletest/googlemock/cmake/gmock.pc.in \
+	C:/Projekte/Projekt/repo/googletest/googlemock/cmake/gmock_main.pc.in \
+	C:/Projekte/Projekt/repo/googletest/googlemock/src/gmock-all.cc \
+	C:/Program\ Files/CMake/bin/cmake.exe

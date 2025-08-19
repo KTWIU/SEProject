@@ -1,0 +1,58 @@
+title Aufgabe hinzufügen – gültige und ungültige Eingabe
+
+participant "user:User" as user
+participant "mainWindow:ViewInterface" as mainWindow
+participant "controller:TaskControllerInterface" as controller
+participant "manager:TaskInterface" as manager
+participant "factory:TaskFactory" as factory
+participant "storage:File" as storage
+
+user->>mainWindow: Klick "Aufgabe hinzufügen"
+activate mainWindow
+mainWindow->mainWindow: Eingaben erfassen\nund validieren
+
+box over controller,manager:Regel für gültige Eingabe:\n- Titel darf nicht leer sein\n- Fälligkeitsdatum darf nicht in der Vergangenheit liegen
+alt Eingabe gültig
+    mainWindow->controller: addAufgabe(titel,beschreibung,datum)
+    activate controller
+
+    controller->manager: getNextIndex()
+    activate manager
+    controller<--manager: index
+    deactivate manager
+
+    controller->factory: createTask(index,titel,beschreibung,datum,false)
+    activate factory
+    controller<--factory: Task
+    deactivate factory
+
+    controller->manager: addTask(task)
+    activate manager
+    deactivate manager
+
+    controller->manager: saveAufgaben()
+    activate manager
+    manager->storage: Datei schreiben (CSV)
+    activate storage
+    manager<--storage: bestätigt
+    deactivate storage
+    controller<--manager: gespeichert
+    deactivate manager
+    deactivate controller
+
+    mainWindow->controller: getTasks()
+    activate controller
+    controller->manager: getTasks()
+    activate manager
+    controller<--manager: Aufgabenliste
+    deactivate manager
+    mainWindow<--controller: Aufgabenliste
+    deactivate controller
+
+    mainWindow->>user: Aufgabenliste anzeigen
+    deactivate mainWindow
+
+else Eingabe ungültig
+    mainWindow->>user: Fehlermeldung anzeigen
+    deactivate mainWindow
+end

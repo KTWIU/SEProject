@@ -355,8 +355,10 @@ C:/Projekte/Projekt/repo/Aufgabenplaner/mainwindow.h
  mdp:C:/Projekte/Projekt/repo/Aufgabenplaner/mainwindow.h
  mdp:C:/Projekte/Projekt/repo/Task.h
  mdp:C:/Projekte/Projekt/repo/TaskController.h
+ mdp:C:/Projekte/Projekt/repo/TaskControllerInterface.h
  mdp:C:/Projekte/Projekt/repo/TaskInterface.h
  mdp:C:/Projekte/Projekt/repo/TaskManager.h
+ mdp:C:/Projekte/Projekt/repo/ViewInterface.h
  mdp:C:/Projekte/Projekt/repo/build/AufgabenTracker_autogen/moc_predefs.h
  mdp:C:/Qt/6.6.2/mingw_64/include/QtCore/QVector
  mdp:C:/Qt/6.6.2/mingw_64/include/QtCore/q20functional.h
@@ -1784,6 +1786,7 @@ C:/Projekte/Projekt/repo/Aufgabenplaner/ueberfaelligeaufgaben.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+C:/Projekte/Projekt/repo/TaskFactory.h
 C:/Projekte/Projekt/repo/TaskManager.h
 C:/Projekte/Projekt/repo/Aufgabenplaner/dialogtaskbearbeiten.cpp
  uic:ui_dialogtaskbearbeiten.h
@@ -1794,5 +1797,6 @@ C:/Projekte/Projekt/repo/Aufgabenplaner/mainwindow.cpp
 C:/Projekte/Projekt/repo/Aufgabenplaner/ueberfaelligeaufgaben.cpp
  uic:ui_ueberfaelligeaufgaben.h
 C:/Projekte/Projekt/repo/TaskController.cpp
+C:/Projekte/Projekt/repo/TaskFactory.cpp
 C:/Projekte/Projekt/repo/TaskManager.cpp
 C:/Projekte/Projekt/repo/main.cpp

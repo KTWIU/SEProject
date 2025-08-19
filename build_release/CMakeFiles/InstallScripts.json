@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Projekte/Projekt/repo/build_release/cmake_install.cmake",
+		"C:/Projekte/Projekt/repo/build_release/googletest/cmake_install.cmake",
+		"C:/Projekte/Projekt/repo/build_release/googletest/googlemock/cmake_install.cmake",
+		"C:/Projekte/Projekt/repo/build_release/googletest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,1 @@
+-IC:/Projekte/Projekt/repo/build_release/googletest/googlemock/gmock_autogen/include -IC:/Projekte/Projekt/repo/googletest/googlemock/include -IC:/Projekte/Projekt/repo/googletest/googlemock -isystem C:/Projekte/Projekt/repo/googletest/googletest/include -isystem C:/Projekte/Projekt/repo/googletest/googletest

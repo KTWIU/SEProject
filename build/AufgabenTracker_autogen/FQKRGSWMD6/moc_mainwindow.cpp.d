@@ -2,8 +2,10 @@ C:/Projekte/Projekt/repo/build/AufgabenTracker_autogen/FQKRGSWMD6/moc_mainwindow
   C:/Projekte/Projekt/repo/build/AufgabenTracker_autogen/moc_predefs.h \
   C:/Projekte/Projekt/repo/Task.h \
   C:/Projekte/Projekt/repo/TaskController.h \
+  C:/Projekte/Projekt/repo/TaskControllerInterface.h \
   C:/Projekte/Projekt/repo/TaskInterface.h \
   C:/Projekte/Projekt/repo/TaskManager.h \
+  C:/Projekte/Projekt/repo/ViewInterface.h \
   C:/Qt/6.6.2/mingw_64/include/QtCore/QVector \
   C:/Qt/6.6.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.6.2/mingw_64/include/QtCore/q20memory.h \

@@ -25,6 +25,8 @@ add_executable(AufgabenTracker
     TaskManager.h
     TaskController.h
     TaskController.cpp
+    TaskFactory.h
+    TaskFactory.cpp  
     ../Aufgabenplaner/mainwindow.cpp
     ../Aufgabenplaner/mainwindow.h
     ../Aufgabenplaner/mainwindow.ui
@@ -50,7 +52,8 @@ add_executable(simple_test
   test_simple.cpp
   Task.cpp
   TaskManager.cpp
-  TaskController.cpp)
+  TaskController.cpp
+  TaskFactory.cpp)
 target_link_libraries(simple_test PRIVATE Qt6::Core gtest gtest_main)
 enable_testing()
 add_test(NAME simple_test COMMAND simple_test)
